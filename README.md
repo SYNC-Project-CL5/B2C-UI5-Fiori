@@ -1,4 +1,4 @@
-# B2C-UI5-Fiori
+# B2C-UI5/Fiori
 B2C 프로세스를 위한 UI5/Fiori Repository
 
 ## [암쏘타이어 프로그램 시연 영상](https://youtu.be/HWOsBlJr9Mk)
