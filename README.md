@@ -4,8 +4,8 @@ B2C 프로세스를 위한 UI5/Fiori Repository
 ## [암쏘타이어 프로그램 시연 영상](https://youtu.be/HWOsBlJr9Mk)
 
 > B2C 프로세스를 위한 프로그램 목록은 아래와 같음
-> ### [B2C_판매 Portal 및 예약 프로그램 시연 영상](https://youtu.be/mv-HvXbDsME)
-> ### [B2C_판매 Portal 및 예약 프로그램 시연 영상](https://youtu.be/2njm-gRvg5k)
+> ### [B2C_판매 Portal 및 예약 프로그램 시연 영상 1](https://youtu.be/mv-HvXbDsME)
+> ### [B2C_판매 Portal 및 예약 프로그램 시연 영상 2](https://youtu.be/2njm-gRvg5k)
 
  * **개발자 : 김건우(PM)**
   1. B2C 판매사이트 Portal_김건우
