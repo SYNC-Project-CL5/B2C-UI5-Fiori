@@ -1,0 +1,40 @@
+<mvc:View
+    controllerName="sync.ea.findstore.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:tnt="sap.tnt"
+    xmlns:m="sap.m"
+    height="100%"
+>
+    <m:Page>
+        <m:OverflowToolbar>
+            <m:Button
+                text="직영점 목록조회"
+                icon="sap-icon://menu2"
+                press="onCollapseExpandPress"
+            />
+        </m:OverflowToolbar>
+        <m:HBox>
+            <tnt:NavigationList
+                id="navigationList"
+                width="320px"
+                itemSelect="onNavItemSelect">
+                <tnt:NavigationListItem
+                    text="직영점"
+                    key="rootItem1"
+                    icon="sap-icon://cart-approval">
+                    <tnt:NavigationListItem text="현재 위치로 이동" key="now"/>
+                    <tnt:NavigationListItem text="대전 생산공장" key="factory" />
+                    <tnt:NavigationListItem text="대전 저장창고" key="storage" />
+                    <tnt:NavigationListItem text="구로 직영점" key="guro"  />
+                    <tnt:NavigationListItem text="평택 직영점" key="pyeongtaek"  />
+                    <tnt:NavigationListItem text="종로 직영점" key="jongro"  />
+                    <tnt:NavigationListItem text="인천 직영점" key="incheon"  />
+                    <tnt:NavigationListItem text="오산 직영점" key="osan"  />
+                    <tnt:NavigationListItem text="대구 직영점" key="daegu"  />
+                    <tnt:NavigationListItem text="대전 직영점" key="daejeon"  />
+                </tnt:NavigationListItem>
+            </tnt:NavigationList>
+            <mvc:XMLView viewName="sync.ea.findstore.view.Map" width="100%" height="100%" id="mapView" />
+        </m:HBox>
+    </m:Page>
+</mvc:View>

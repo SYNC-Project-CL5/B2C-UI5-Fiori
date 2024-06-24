@@ -1,0 +1,13 @@
+<mvc:View xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    controllerName="sync.ea.findstore.controller.Map"
+    displayBlock="true"
+    width="1600px"
+    height="100%">
+    
+    
+    <!-- <Button text="~~ 이동" visible="true" /> -->
+    <core:HTML content="&lt;div id=&quot;map&quot; style=&quot;width:900px; height:100%;&quot;&gt;&lt;/div&gt;" />
+    
+</mvc:View>

@@ -1,0 +1,177 @@
+{
+  "_version": "1.17.0",
+  "sap.app": {
+    "id": "sync.ea.findstore",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.12.5",
+      "toolsId": "13fd4fc0-6647-401f-879e-ccbbc78a43a2"
+    },
+    "dataSources": {
+      "mainService": {
+        "uri": "/sap/opu/odata/sap/ZEA_T001W_SRV/",
+        "type": "OData",
+        "settings": {
+          "annotations": [],
+          "localUri": "localService/metadata.xml",
+          "odataVersion": "2.0"
+        }
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.71.68",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.f": {},
+        "sap.suite.ui.generic.template": {},
+        "sap.ui.comp": {},
+        "sap.ui.generic.app": {},
+        "sap.ui.table": {},
+        "sap.ushell": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "sync.ea.findstore.i18n.i18n"
+        }
+      },
+      "": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {}
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ],
+      "js": [
+        {
+          "name": "maps.js",
+          "uri": "https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=a9hrwuzcq9"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.f.routing.Router",
+        "viewType": "XML",
+        "async": true,
+        "viewPath": "sync.ea.findstore.view",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "clearControlAggregation": false
+      },
+      "routes": [
+        {
+            "name": "RouteView1",
+            "pattern": ":?query:",
+            "target": ["TargetView1"]
+        },
+        {
+            "name": "factory",
+            "pattern": "factory",
+            "target": "Map"
+        },
+        {
+            "name": "storage",
+            "pattern": "storage",
+            "target": "Map"
+        },
+        {
+            "name": "guro",
+            "pattern": "guro",
+            "target": "Map"
+        },
+        {
+            "name": "pyeongtaek",
+            "pattern": "pyeongtaek",
+            "target": "Map"
+        },
+        {
+            "name": "jongro",
+            "pattern": "jongro",
+            "target": "Map"
+        },
+        {
+            "name": "incheon",
+            "pattern": "incheon",
+            "target": "Map"
+        },
+        {
+            "name": "osan",
+            "pattern": "osan",
+            "target": "Map"
+        },
+        {
+            "name": "daegu",
+            "pattern": "daegu",
+            "target": "Map"
+        },
+        {
+            "name": "daejeon",
+            "pattern": "daejeon",
+            "target": "Map"
+        }
+      ],
+        "targets": {
+            "TargetView1": {
+                "viewType": "XML",
+                "transition": "slide",
+                "clearControlAggregation": false,
+                "viewId": "View1",
+                "viewName": "View1"
+            },
+            "Map": {
+                "viewType": "XML",
+                "transition": "slide",
+                "clearControlAggregation": false,
+                "viewId": "Map",
+                "viewName": "Map"
+            }
+        }
+    },
+    "rootView": {
+      "viewName": "sync.ea.findstore.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "App"
+    }
+  }
+}

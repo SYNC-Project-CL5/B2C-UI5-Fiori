@@ -1,0 +1,222 @@
+<mvc:View xmlns:form="sap.ui.layout.form"
+	controllerName="sync.ea.company1.controller.settings.MasterSettings"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:layout="sap.ui.layout"
+	xmlns:microchart="sap.suite.ui.microchart">
+    <Carousel class="sapUiContentPadding">
+		<Page>
+			<layout:BlockLayout
+			id="BlockLayout"
+			background="Default">
+			<layout:BlockLayoutRow>
+				<layout:BlockLayoutCell class="verticalLayoutWithBackground9">
+					<!-- 배경 이미지가 표시될 부분 -->
+					<layout:VerticalLayout>
+						<!-- <Title text="ISOT"  level="H3" titleStyle="H2" class="TOPTEXT"/> -->
+						<Text text="가솔린 타이어"  class="TOPSUBTEXT font-face2 overlay-text2"/>
+						<!-- <Text text="Partnering Progress"  class="TOPSUBTEXT font-face"/> -->
+					</layout:VerticalLayout>
+				</layout:BlockLayoutCell>
+			</layout:BlockLayoutRow>
+			</layout:BlockLayout>
+	
+			<layout:VerticalLayout class="sapUiResponsiveMargin">
+
+				
+
+
+            <!-- 가솔린 사계절 일반 타이어    -->
+			<layout:Grid defaultSpan="XL6 L6 M6 S12">
+				<layout:VerticalLayout >
+
+				<SlideTile id="slideTile01" class="sapUiTinyMarginBegin sapUiTinyMarginTop" sizeBehavior="Responsive" >
+					<GenericTile
+						id="slideTile01_1"
+						backgroundImage="{/TileCollection/0/backgroundImage}"
+						frameType="TwoByOne"
+						press="pressOnTileOne"
+						class="customGenericTile"						
+						>
+					</GenericTile>
+					<GenericTile
+						id="slideTile01_2"
+						backgroundImage="{/TileCollection/1/backgroundImage}"
+						frameType="TwoByOne"
+						press="pressOnTileTwo"
+						class="customGenericTile"
+						>
+						<TileContent footer="판매가격 : 160,100원부터" class="customGenericTile2" >
+							<NewsContent
+								contentText="프로터보™ "
+								subheader="가능인치 : 18' / 19' / 20'" />
+						</TileContent>
+					</GenericTile>                                
+				</SlideTile>
+					<layout:HorizontalLayout>
+						<Image src="https://asset.hankooktire.com/content/dam/hankooktire/kr/product-/bi/pcr/bi_Kinergy_EX.svg" class="sapUiTinyMarginBegin sapUiTinyMarginTop image-container"/>
+					</layout:HorizontalLayout>
+						<Text text="빗길, 눈길에 안전성을 강화한 올웨더 타이어"  class="sapUiTinyMarginBegin sapUiTinyMarginTop"/>
+				
+					<layout:HorizontalLayout>
+						<Button text="가솔린 타이어" class="sapUiTinyMarginBegin sapUiTinyMarginTop customButton" />
+						<Button text="올시즌" class="sapUiTinyMarginBegin sapUiTinyMarginTop customButton" />
+						<Button text="정숙성" class="sapUiTinyMarginBegin sapUiTinyMarginTop customButton" />
+						<Button text="M+S" class="sapUiTinyMarginBegin sapUiTinyMarginTop customButton" />
+					</layout:HorizontalLayout>
+					<layout:HorizontalLayout>
+						<Button text="마른노면성능" class="sapUiTinyMarginBegin sapUiTinyMarginTop customButton" />
+						<Button text="연비(구름저항)" class="sapUiTinyMarginBegin sapUiTinyMarginTop customButton" />
+					</layout:HorizontalLayout>
+				</layout:VerticalLayout>
+
+
+
+				<!-- 가솔린 사계절 프리미엄 타이어 -->            
+				<layout:VerticalLayout >
+				<SlideTile id="slideTile02" class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+					<GenericTile
+						id="slideTile02_1"
+						backgroundImage="{/TileCollection2/0/backgroundImage}"
+						frameType="TwoByOne"
+						press="pressOnTileOne"
+						class="customGenericTile">
+					</GenericTile>
+					<GenericTile
+						id="slideTile02_2"
+						backgroundImage="{/TileCollection4/1/backgroundImage}"
+						frameType="TwoByOne"
+						press="pressOnTileTwo"
+						class="customGenericTile">
+						<TileContent footer="판매가격 : 167,200원 부터">
+							<NewsContent
+								contentText="Kinergy AS EV"
+								subheader="가능인치 : 18' / 19' / 20'" />
+						</TileContent>
+					</GenericTile>   
+				</SlideTile>
+					<layout:HorizontalLayout>
+						<Image src="	https://www.hankooktire.com/content/dam/hankooktire/kr/product-/bi/pcr/bi_Ventus_S1_evo_Z.svg" class="sapUiTinyMarginBegin sapUiTinyMarginTop image-container"/>
+					</layout:HorizontalLayout>
+						<Text text="프리미엄을 넘어선 특별한 가치"  class="sapUiTinyMarginBegin sapUiTinyMarginTop"/>
+				
+					<layout:HorizontalLayout>
+						<Button text="가솔린 타이어" class="sapUiTinyMarginBegin sapUiTinyMarginTop customButton" />
+						<Button text="올시즌" class="sapUiTinyMarginBegin sapUiTinyMarginTop customButton" />
+						<Button text="내구성" class="sapUiTinyMarginBegin sapUiTinyMarginTop customButton" />
+						<Button text="승차감" class="sapUiTinyMarginBegin sapUiTinyMarginTop customButton" />
+					</layout:HorizontalLayout>
+					<layout:HorizontalLayout>						
+						<Button text="마른노면성능" class="sapUiTinyMarginBegin sapUiTinyMarginTop customButton" />
+						<Button text="연비(구름저항)" class="sapUiTinyMarginBegin sapUiTinyMarginTop customButton" />
+						<Button text="Premium" class="sapUiTinyMarginBegin sapUiTinyMarginTop customPreButton "/>
+					</layout:HorizontalLayout>
+				</layout:VerticalLayout>
+
+			</layout:Grid>
+
+
+			
+			
+			<layout:Grid defaultSpan="XL6 L6 M6 S12">
+				<layout:VerticalLayout >
+
+				<!-- 가솔린 윈터 일반 타이어 -->
+				<SlideTile id="slideTile3" class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+					<GenericTile
+						id="slideTile3_1"
+						backgroundImage="{/TileCollection3/0/backgroundImage}"
+						frameType="TwoByOne"
+						press="pressOnTileOne"
+						class="customGenericTile">
+					</GenericTile>
+					<GenericTile
+						id="slideTile3_2"
+						backgroundImage="{/TileCollection3/1/backgroundImage}"
+						frameType="TwoByOne"
+						press="pressOnTileTwo"
+						class="customGenericTile">
+						<TileContent footer="판매가격 : 170,900원 부터">
+							<NewsContent
+								contentText="Optimo H426(온라인 전용상품)"
+								subheader="가능인치 : 18' / 19' / 20'" />
+						</TileContent>
+					</GenericTile>                
+				</SlideTile>
+					<layout:HorizontalLayout>
+						<Image src="https://www.hankooktire.com/content/dam/hankooktire/kr/product-/bi/pcr/bi_Winter%20Icept%20IZ2A.svg" class="sapUiTinyMarginBegin sapUiTinyMarginTop image-container"/>
+					</layout:HorizontalLayout>
+						<Text text="눈 길 위의 자신감, 겨울철 주행을 위한 최고의 선택"  class="sapUiTinyMarginBegin sapUiTinyMarginTop"/>
+				
+					<layout:HorizontalLayout>
+						<Button text="가솔린 타이어" class="sapUiTinyMarginBegin sapUiTinyMarginTop customButton" />
+						<Button text="빙판길성능" class="sapUiTinyMarginBegin sapUiTinyMarginTop customButton"/>
+                  		<Button text="눈길성능" class="sapUiTinyMarginBegin sapUiTinyMarginTop customButton"/>
+					</layout:HorizontalLayout>
+					<layout:HorizontalLayout>						
+						<Button text="내구성" class="sapUiTinyMarginBegin sapUiTinyMarginTop customButton"/>
+						<Button text="연비(구름저항)" class="sapUiTinyMarginBegin sapUiTinyMarginTop customButton" />
+						<Button text="겨울용" class="sapUiTinyMarginBegin sapUiTinyMarginTop customButtonWinter" />
+					</layout:HorizontalLayout>
+				</layout:VerticalLayout>
+
+
+				<!-- 가솔린 윈터 프리미엄 타이어 -->
+				<layout:VerticalLayout >
+					<SlideTile id="slideTile4" class="sapUiTinyMarginBegin sapUiTinyMarginTop customSlideTile">						<GenericTile
+							id="slideTile4_1"
+							backgroundImage="{/TileCollection4/0/backgroundImage}"
+							frameType="TwoByOne"
+							press="pressOnTileOne"
+							class="customGenericTile">
+						</GenericTile>
+						<GenericTile
+							id="slideTile4_2"
+							backgroundImage="{/TileCollection4/1/backgroundImage}"
+							frameType="TwoByOne"
+							press="pressOnTileTwo"
+							class="customGenericTile">
+							<TileContent footer="판매가격 : 136,000원 부터">
+								<NewsContent
+									contentText="UltraContact UC 6"
+									subheader="가능인치 : 18' / 19' / 20'" />
+							</TileContent>
+						</GenericTile>                
+					</SlideTile>
+					<layout:HorizontalLayout>
+							<Image src="https://asset.hankooktire.com/content/dam/hankooktire/local/img/product/w330/logo1.svg" class="sapUiTinyMarginBegin sapUiTinyMarginTop image-container"/>
+						</layout:HorizontalLayout>
+							<Text text="유럽에서 인정받은 겨울철 고성능 퍼포먼스 타이어"  class="sapUiTinyMarginBegin sapUiTinyMarginTop"/>
+					
+						<layout:HorizontalLayout>
+						<Button text="가솔린 타이어" class="sapUiTinyMarginBegin sapUiTinyMarginTop customButton" />
+						<Button text="빙판길성능" class="sapUiTinyMarginBegin sapUiTinyMarginTop customButton"/>
+                  		<Button text="눈길성능" class="sapUiTinyMarginBegin sapUiTinyMarginTop customButton"/>
+					</layout:HorizontalLayout>
+					<layout:HorizontalLayout>						
+						<Button text="내구성" class="sapUiTinyMarginBegin sapUiTinyMarginTop customButton"/>
+						<Button text="연비(구름저항)" class="sapUiTinyMarginBegin sapUiTinyMarginTop customButton" />
+						<Button text="겨울용" class="sapUiTinyMarginBegin sapUiTinyMarginTop customButtonWinter" />
+						<Button text="Premium" class="sapUiTinyMarginBegin sapUiTinyMarginTop customPreButton "/>
+					</layout:HorizontalLayout>
+				</layout:VerticalLayout>
+
+			</layout:Grid>
+
+            <Title
+            titleStyle="H2"
+            text="Contact us"
+            class="sapUiTinyMarginBegin sapUiMediumMarginTop"/>
+        <layout:HorizontalLayout allowWrapping="true">
+            <GenericTile
+                header="E-mail"
+                subheader="ISOT@ISOT.co.kr"
+                mode="LineMode"
+                class="sapUiTinyMarginBegin"/>
+        </layout:HorizontalLayout>
+    </layout:VerticalLayout>
+</Page>
+</Carousel>
+
+</mvc:View>
+

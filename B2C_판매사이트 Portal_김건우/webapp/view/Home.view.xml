@@ -1,0 +1,272 @@
+<mvc:View
+	controllerName="sync.ea.company1.controller.Home"
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Page showHeader="false">
+		<landmarkInfo>
+			<PageAccessibleLandmarkInfo
+				rootRole="Region"
+				rootLabel="{i18n>Home_rootLabel}"
+				contentRole="Main"
+				contentLabel="{i18n>Home_contentLabel}"/>
+		</landmarkInfo>
+
+		<!-- <core:HTML 
+			id="idHTML" 
+		/> -->
+		<Carousel class="sapMCrslCustom sapMCrsl sapUiNoMargin">
+			<pages>
+				<core:HTML id="idHTML"/>
+				<core:HTML id="idHTML3"/>
+				<core:HTML id="idHTML2"/>
+
+			</pages>
+		</Carousel>
+
+
+
+		<l:BlockLayout
+			id="BlockLayout"
+			background="Default">
+			<!-- <l:BlockLayoutRow>
+				<l:BlockLayoutCell class="verticalLayoutWithBackground6">
+					<l:VerticalLayout>
+						<Text text="ISOT"  class="TOPSUBTEXT3 font-face"/>
+						<Button 
+							icon="sap-icon://cart-4" 
+							text="타이어 검색" 
+							press="onSearchTiresPress" 
+							color="black"
+							class="TOPSUBBUTTON"/>
+					</l:VerticalLayout>
+				</l:BlockLayoutCell>
+			</l:BlockLayoutRow> -->
+
+
+			
+
+			<l:BlockLayoutRow>
+				<l:BlockLayoutCell class="whiteBackgroundCell" />
+			</l:BlockLayoutRow>
+
+			<l:BlockLayoutRow>
+				<l:BlockLayoutCell
+					backgroundColorSet="ColorSet1"
+					backgroundColorShade="ShadeA"
+					class="verticalLayoutWithBackground hover-zoom">
+					<l:VerticalLayout>
+						<core:Icon
+						src="sap-icon://heating-cooling"
+						size="2rem"
+						/>
+						<Title
+							text="All Season"
+							level="H3"
+							titleStyle="H2"
+							class="sapUiTinyMarginTopBottom CELLTEXT font-face3"/>
+						<Text
+							text="완벽을 추구하는 당신을 위한 사계절용 밸런스 타이어"
+							class="sapUiTinyMarginBottom CELLTEXT2 font-face2"  />
+						<Text
+						text="" />
+						<Link
+							text="올시즌 타이어 구매하러가기 "
+							tooltip="{i18n>accessRevenueLink}"
+							class="CELLTEXT3 font-face2" 
+							press="onNavigateToAllSeason" />							
+					</l:VerticalLayout>
+				</l:BlockLayoutCell>
+							
+
+				<l:BlockLayoutCell 					
+					backgroundColorSet="ColorSet1"
+					backgroundColorShade="ShadeA"
+					class="verticalLayoutWithBackground2 hover-zoom">
+					<l:VerticalLayout>
+						<core:Icon
+						src="sap-icon://temperature"
+						size="2rem"
+						color="Default"/>
+						<Title
+							text="Winter"
+							level="H3"
+							titleStyle="H2"
+							class="sapUiTinyMarginTopBottom CELLTEXT font-face3"/>
+						<Text
+							text="눈 길 위의 자신감, 겨울철 주행을 위한 최고의 선택"
+							class="sapUiTinyMarginBottom CELLTEXT2 font-face2"  />
+						<Text
+						text="" />
+						<Link
+							text="윈터용 타이어 구매하러가기 "
+							tooltip="{i18n>accessRevenueLink}"
+							class="CELLTEXT3 font-face2"
+							press="onNavigateToWinter" />		
+					</l:VerticalLayout>
+				</l:BlockLayoutCell>
+
+				<l:BlockLayoutCell
+					backgroundColorSet="ColorSet1"
+					backgroundColorShade="ShadeA"
+					class="verticalLayoutWithBackground3 hover-zoom"
+					>
+					<l:VerticalLayout>
+						<core:Icon
+						src="sap-icon://BusinessSuiteInAppSymbols/icon-page-up"
+						size="1.7rem"
+						/>
+						<Title
+							text="Premium"
+							level="H3"
+							titleStyle="H2"
+							class="sapUiTinyMarginTopBottom CELLTEXT font-face3"/>
+						<Text
+							text="프리미엄을 넘어선 특별한 가치"
+							class="sapUiTinyMarginBottom CELLTEXT2 font-face2"  />
+						<Text
+						text="" />
+						<Link
+							text="프리미엄 타이어 구매하러가기 "
+							tooltip="{i18n>accessRevenueLink}"
+							class="CELLTEXT3 font-face2" 
+							press="onNavigateToPreminum"/>						
+					</l:VerticalLayout>
+				</l:BlockLayoutCell>
+				</l:BlockLayoutRow>
+
+				<l:BlockLayoutRow>
+					<l:BlockLayoutCell class="whiteBackgroundCell2" />
+				</l:BlockLayoutRow>
+
+				<l:BlockLayoutRow>
+
+				<l:BlockLayoutCell
+					backgroundColorSet="ColorSet11"
+					backgroundColorShade="ShadeB"
+					class="verticalLayoutWithBackground4 hover-zoom">
+					<l:VerticalLayout>
+						<core:Icon
+						src="sap-icon://collision"
+						size="2rem"
+						color="Default"/>
+						<Title
+							text="Gasoline"
+							level="H3"
+							titleStyle="H2"
+							class="sapUiTinyMarginTopBottom CELLTEXT font-face3"/>
+						<Text
+							text="저소음, 안전까지 갖춘 컴포트 타이어"
+							class="sapUiTinyMarginBottom CELLTEXT2 font-face2"  />
+						<Text
+						text="" />
+						<Link
+							text="가솔린 타이어 구매하러가기 "
+							tooltip="{i18n>accessRevenueLink}"
+							class="CELLTEXT3 font-face2" 
+							press="onNavigateToGasolineTire"/>		
+					</l:VerticalLayout>
+				</l:BlockLayoutCell>
+
+				<l:BlockLayoutCell
+					backgroundColorSet="ColorSet11"
+					backgroundColorShade="ShadeB"
+					class="verticalLayoutWithBackground5 hover-zoom">
+					<l:VerticalLayout>
+						<core:Icon
+						src="sap-icon://e-care"
+						size="2rem"
+						/>
+						<Title
+							text="Electric"
+							level="H3"
+							titleStyle="H2"
+							class="sapUiTinyMarginTopBottom CELLTEXT font-face3"/>
+						<Text
+							text="EV 특화 기술로 완성된 전기차 전용 타이어"
+							class="sapUiTinyMarginBottom CELLTEXT2 font-face2"  />
+						<Text
+						text="" />
+						<Link
+							text="전기차 타이어 구매하러가기 "
+							tooltip="{i18n>accessRevenueLink}"
+							class="CELLTEXT3 font-face2" 
+							press="onNavigateToEletricTire"/>						
+					</l:VerticalLayout>
+				</l:BlockLayoutCell>
+				</l:BlockLayoutRow>
+				<l:BlockLayoutRow>
+
+
+				<l:BlockLayoutCell
+					backgroundColorSet="ColorSet9"
+					backgroundColorShade="ShadeA"
+					width="3">
+					<Table
+						items="{path:'customer>/customers', templateShareable: false}"
+						fixedLayout="false">
+						<headerToolbar>
+							<Toolbar design="Transparent">
+								<Title
+									text="Promotions"
+									level="H3"/>
+							</Toolbar>
+						</headerToolbar>
+							<columns>
+								<Column>
+									<Text text="{i18n>customerName}" hAlign="Center"/>
+								</Column>
+								<Column>
+									<Text text="{i18n>lastPurchase}" hAlign="End"/>
+								</Column>
+								<Column>
+									<Text text="{i18n>payment}"/>
+								</Column>
+								<Column>
+									<Text text="{i18n>amount}"/>
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem>
+									<cells>
+										<Text text="{customer>name}"/>
+										<Text text="{customer>lastPurchase}"/>
+										<ObjectNumber
+											number="{customer>payment}"
+											state="{customer>state}"/>
+										<ObjectNumber
+											number="{
+												parts:[{path:'customer>amount'},{path:'customer>currencyCode'}],
+												type: 'sap.ui.model.type.Currency',
+												formatOptions: {showMeasure: false}
+											}"
+											unit="{customer>currencyCode}" />
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+				</l:BlockLayoutCell>
+			</l:BlockLayoutRow>
+
+			<l:BlockLayoutRow>
+				<l:BlockLayoutCell>
+					<l:VerticalLayout class="centerAlign"> 
+						<Title text="Our Brands" level="H2" titleStyle="H1" class="font-face3" />
+						<Carousel class="sapUiContentPadding" loop="true">
+							<pages>
+								<Image src="https://asset.hankooktire.com/content/dam/hankooktire/local/img/main/brand-product/our-brands/img_ventus@2x.jpg" class="hover-zoom"/>
+								<Image src="https://asset.hankooktire.com/content/dam/hankooktire/local/img/main/brand-product/our-brands/img_dynapro@2x.jpg" class="hover-zoom"/>
+								<Image src="https://asset.hankooktire.com/content/dam/hankooktire/local/img/main/brand-product/our-brands/img_kinergy2.jpg" class="hover-zoom"/>
+								<Image src="https://asset.hankooktire.com/content/dam/hankooktire/local/img/main/brand-product/our-brands/img_wintericeptipike@2x.jpg" class="hover-zoom"/>
+								<Image src="https://asset.hankooktire.com/content/dam/hankooktire/local/img/main/brand-product/our-brands/img_vantra@2x.jpg" class="hover-zoom"/>
+							</pages>
+						</Carousel>
+					</l:VerticalLayout>
+				</l:BlockLayoutCell>
+			</l:BlockLayoutRow>
+
+
+		</l:BlockLayout>
+	</Page>
+</mvc:View>

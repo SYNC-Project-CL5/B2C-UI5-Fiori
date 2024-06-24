@@ -1,0 +1,211 @@
+<mvc:View controllerName="sync.ea.reserve2.controller.ObjectPageHeaderContentPriorities"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.uxap"
+    xmlns:layout="sap.ui.layout"
+    xmlns:m="sap.m"
+    xmlns:goals="sap.uxap.sample.SharedBlocks.goals"
+    height="100%"
+    displayBlock="true"
+>
+    <ObjectPageLayout
+        id="ObjectPageLayout"
+        showTitleInHeaderContent="true"
+    >
+        <headerTitle>
+            
+            
+            <ObjectPageHeader
+                objectImageURI="data:image/jpeg;base64,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"
+                objectImageShape="Square"
+                objectTitle="프로터보™"
+                objectImageAlt="평점"
+                id="ObjectPageLayoutHeaderTitle"
+                class="customTire"
+                isObjectTitleAlwaysVisible="false"
+                showPlaceholder="true"
+                fieldGroupIds="abc"
+            >
+                <m:Button
+                    text="예약"
+                    press="onReservePress"
+                    type="Accept"
+                />
+                <actions>
+                    <!-- <ObjectPageHeaderActionButton icon="sap-icon://pull-down" text="show section" type="Emphasized" tooltip="pull-down"/> -->
+                    <!-- <ObjectPageHeaderActionButton icon="sap-icon://show" text="show state" type="Emphasized" tooltip="show"/> -->
+                </actions>
+            </ObjectPageHeader>
+            
+            <!-- </m:HBox> -->
+        </headerTitle>
+
+        <headerContent>
+            <layout:VerticalLayout>
+                <m:ObjectStatus
+                    title="제품코드"
+                    text="30000000"
+                />
+                <m:ObjectStatus
+                    title="종류"
+                    text="가솔린"
+                />
+                <m:ObjectStatus
+                    title="사계절/윈터"
+                    text="사계절"
+                />
+                <m:ObjectStatus
+                    title="일반/프리미엄"
+                    text="일반"
+                />
+            </layout:VerticalLayout>
+
+            <layout:VerticalLayout>
+                <layout:layoutData>
+                    <ObjectPageHeaderLayoutData visibleS="false" />
+                </layout:layoutData>
+                <m:Text text="&#10; &#10;" />
+                <m:ObjectStatus
+                    title="판매가"
+                    text="500,000 KRW"
+                />
+                <m:ObjectStatus
+                    title="단위"
+                    text="PKG"
+                />
+                <!-- <m:ObjectStatus title="Email" text="email@address.com"/> -->
+            </layout:VerticalLayout>
+
+            <layout:VerticalLayout>
+                <layout:layoutData>
+                    <ObjectPageHeaderLayoutData
+                        visibleS="false"
+                        visibleM="false"
+                    />
+                </layout:layoutData>
+                <m:ObjectStatus
+                    text="평점 4.5"
+                    state="Success"
+                />
+                <m:RatingIndicator
+                    maxValue="5"
+                    class="sapUiSmallMarginBottom"
+                    value="4.5"
+                    tooltip="Rating Tooltip"
+                />
+                <layout:HorizontalLayout >
+                    <layout:VerticalLayout >
+                        <m:ObjectStatus
+                        text="승차감 4.6"
+                        state="Success"
+                        />
+                        <m:RatingIndicator
+                            maxValue="5"
+                            class="sapUiSmallMarginBottom"
+                            value="4.6"
+                            tooltip="Rating Tooltip"
+                        />
+                    </layout:VerticalLayout>
+
+                    <m:Text text=" "/>
+                    <layout:VerticalLayout >
+                        <m:ObjectStatus
+                        text="연비 3.7"
+                        state="Success"
+                        />
+                        <m:RatingIndicator
+                            maxValue="5"
+                            class="sapUiSmallMarginBottom"
+                            value="3.7"
+                            tooltip="Rating Tooltip"
+                        />
+                    </layout:VerticalLayout>
+
+                    <m:Text text=" "/>
+                    <layout:VerticalLayout >
+                        
+                        <m:ObjectStatus
+                        text="마일리지 4.4"
+                        state="Success"
+                        />
+                        <m:RatingIndicator
+                            maxValue="5"
+                            class="sapUiSmallMarginBottom"
+                            value="4.4"
+                            tooltip="Rating Tooltip"
+                        />
+                    </layout:VerticalLayout>
+
+                    <m:Text text=" "/>
+                    <layout:VerticalLayout >
+                        <m:ObjectStatus
+                        text="고속주행 4.7"
+                        state="Success"
+                        />
+                        <m:RatingIndicator
+                            maxValue="5"
+                            class="sapUiSmallMarginBottom"
+                            value="4.7"
+                            tooltip="Rating Tooltip"
+                        />
+                    </layout:VerticalLayout>
+                </layout:HorizontalLayout>
+            </layout:VerticalLayout>
+
+        </headerContent>
+
+        <sections>
+            <ObjectPageSection title="2014 Goals Plan">
+                <subSections>
+                    <ObjectPageSubSection
+                        title="프로터보™ 올시즌 고성능 타이어"
+                    >
+                        <blocks>
+                            
+                                <m:Image
+                                    src="https://ifh.cc/g/4hcyom.jpg"
+                                    alt="이미지설명"
+                                    width="90%"
+                                />
+                                <m:VBox >
+                                    <m:Title text="제품 설명"></m:Title>
+                                    <m:Text
+                                        text="
+                                    &#10; 프로터보™ 올시즌 고성능 타이어는 당신의 차량에 최상의 주행 경험을 제공하기 위해 설계된 최고급 타이어입니다.
+                                    &#10; 혁신적인 기술과 우수한 소재를 결합하여 사계절 내내 안정적이고 안전한 주행을 보장합니다."
+                                    />
+                                    <m:Text text="&#10;" />   
+                                    <m:Title text="&#10;제품 특징"></m:Title>
+                                    <m:Text
+                                        text="
+                                    &#10; 4계절 주행 성능 
+                                    &#10; 프로터보™ 타이어는 다양한 기후 조건에서 탁월한 성능을 발휘합니다.  
+                                    &#10; 특별히 설계된 트레드 패턴은 눈, 비, 진흙, 마른 노면 등 다양한 노면 상태에서 최상의 그립을 제공합니다.   
+                                    &#10;
+                                    &#10; 모든 기후 적응성 
+                                    &#10; 특별한 고무 혼합물은 극한의 온도 변화에도 유연성과 내구성을 유지합니다.  
+                                    &#10; 영하의 기온에서도 경화되지 않으며, 고온에서도 마모되지 않는 특성을 가집니다.  
+                                    &#10;
+                                    &#10; 고급 트레드 디자인  
+                                    &#10; 다층 구조 트레드
+                                    &#10; 다층 구조의 트레드 디자인은 타이어의 수명을 연장시키고, 마모를 균일하게 분산시켜 타이어의 성능을 지속적으로 유지시킵니다. 
+                                    &#10;
+                                    &#10; 최적화된 패턴 
+                                    &#10; 최적화된 패턴 디자인은 소음을 최소화하고, 승차감을 향상시킵니다. 
+                                    &#10; 또한, 노면과의 접지력을 극대화하여 안정적인 핸들링을 제공합니다. 
+                                    "
+                                    />
+                                </m:VBox>
+                            
+                        </blocks>
+                    </ObjectPageSubSection>
+                </subSections>
+            </ObjectPageSection>
+        </sections>
+    </ObjectPageLayout>
+
+    <!-- <m:Page id="page" title="{i18n>title}">
+        <m:content>
+            <m:Text text="hello world"/>
+        </m:content>
+    </m:Page> -->
+</mvc:View>

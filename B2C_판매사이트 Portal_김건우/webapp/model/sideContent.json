@@ -1,0 +1,98 @@
+{
+	"navigation": [
+		{
+			"title": "Home",
+			"icon": "sap-icon://home",
+			"expanded": true,
+			"key": "home",
+			"items": []
+		},
+		{
+			"title": "타이어",
+			"icon": "sap-icon://vehicle-repair",
+			"expanded": true,
+			"key": "masterSettings",
+			"items": [
+			]
+		},
+
+		{
+			"title": "직영점 조회",
+			"icon": "sap-icon://retail-store",
+			"expanded": false,
+			"key": "plant",
+			"items": []
+		},
+
+		{
+			"title": "주문내역 조회",
+			"icon": "sap-icon://supplier",
+			"expanded": false,
+			"key": "order",
+			"items": []
+		},
+
+		{
+			"title": "기업 정보",
+			"icon": "sap-icon://line-chart",
+			"expanded": true,
+			"key": "company",
+			"items": [
+				{
+					"title": "인사말",
+					"key": "Hello"
+				}
+			]
+		}
+	],
+	"fixedNavigation": [
+		{
+			"title": "기업 Portal",
+			"icon": "sap-icon://offsite-work",
+			"key": "Important Links was pressed"
+		},
+		{
+			"title": "Legal",
+			"icon": "sap-icon://compare",
+			"key": "Legal was pressed"
+		}
+	],
+	"masterSettings": [
+		{
+			"title": "전체 타이어",
+			"key": "AllSelect",
+			"selected": true
+		},
+		{
+			"title": "가솔린 타이어",
+			"key": "GasolineTire",
+			"selected": true
+		},
+		{
+			"title": "전기차 타이어",
+			"key": "ElectricTire",
+			"selected": true
+		},
+		{
+			"title": "사계절 타이어",
+			"key": "AllSeason",
+			"selected": true
+		},
+		{
+			"title": "윈터 타이어",
+			"key": "Winter",
+			"selected": true
+		},
+		{
+			"title": "일반 등급 타이어",
+			"key": "Normal",
+			"selected": true
+		},
+		
+		{
+			"title": "프리미엄 등급 타이어",
+			"key": "Preminum",
+			"selected": true
+		}
+	]
+}

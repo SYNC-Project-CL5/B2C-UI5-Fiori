@@ -1,0 +1,54 @@
+<mvc:View
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc">
+    <Page showHeader="false">
+        <landmarkInfo>
+            <PageAccessibleLandmarkInfo
+                rootRole="Region"
+                rootLabel="{i18n>Home_rootLabel}"
+                contentRole="Main"
+                contentLabel="{i18n>Home_contentLabel}"/>
+        </landmarkInfo>
+
+        <l:BlockLayout
+            id="BlockLayout"
+            background="Default">
+            
+            <l:BlockLayoutRow>
+                <!-- Left Cell -->
+                <l:BlockLayoutCell span="L6 M6 S12">
+                    <l:VerticalLayout>
+                        <Image src="https://lh3.google.com/u/0/d/1l05EMghzI8x96wOW1Vqw4Ih6M1MbAgGv=w1920-h919-iv1" class="responsiveImage"/>
+                    </l:VerticalLayout>
+                </l:BlockLayoutCell>
+
+                <!-- Right Cell -->
+                <l:BlockLayoutCell span="L6 M6 S12">
+                    <l:VerticalLayout>
+                        <Text text="1조 ❤️" class="TOPSUBTEXT4 font-face2"/>
+
+                    </l:VerticalLayout>
+                </l:BlockLayoutCell>
+            </l:BlockLayoutRow>
+
+            <l:BlockLayoutRow>
+                <!-- Left Cell -->
+                <l:BlockLayoutCell span="L6 M6 S12">
+                    <l:VerticalLayout>
+                         <Text text="모두 감사합니다 :)"  class="TOPSUBTEXT4 font-face2"/>
+                         <Text text="5반 화이팅~"  class="TOPSUBTEXT4 font-face2"/>
+                    </l:VerticalLayout>
+                </l:BlockLayoutCell>
+
+                <!-- Right Cell -->
+                <l:BlockLayoutCell span="L6 M6 S12">
+                    <l:VerticalLayout>
+                        <Image src="https://ifh.cc/g/ywjHfN.jpg" class="responsiveImage"/>
+                    </l:VerticalLayout>
+                </l:BlockLayoutCell>
+            </l:BlockLayoutRow>
+        </l:BlockLayout>
+    </Page>
+</mvc:View>

@@ -1,0 +1,71 @@
+/* Enter your custom styles here */
+
+#__image2 {
+    height: 10rem;
+    width: 10rem;
+}
+
+.customButtonGreen .sapMBtnInner {
+    background-color: white !important;
+    color: rgb(11, 175, 11)  !important; /* 텍스트 색상 설정 */
+    border-width: 2px !important; /* 두꺼운 테두리 두께 */
+    border-style: solid !important; /* 테두리 스타일 */
+    border-color: rgb(11, 175, 11) !important; /* 테두리 색상 */
+}
+
+.customButtonGreen .sapMBtnInner:hover {
+    background-color: rgb(11, 175, 11) !important; /* 버튼 호버 색상 */
+    color: white !important; /* 텍스트 색상 설정 */
+}
+
+.customButtonGreen .sapMBtnInner:active {
+    background-color: rgb(255, 255, 255) !important;
+    color: rgb(11, 175, 11)  !important; /* 텍스트 색상 설정 */
+    border-width: 2px !important; /* 두꺼운 테두리 두께 */
+    border-style: solid !important; /* 테두리 스타일 */
+    border-color: rgb(11, 175, 11) !important; /* 테두리 색상 */
+}
+
+.customButtonGreen .sapUiIcon {
+    color: rgb(11, 175, 11) !important; 
+}
+
+.customButtonBlue .sapMBtnInner {
+    background-color: white !important;
+    color: blue  !important; /* 텍스트 색상 설정 */
+    border-width: 2px !important; /* 두꺼운 테두리 두께 */
+    border-style: solid !important; /* 테두리 스타일 */
+    border-color: blue !important; /* 테두리 색상 */
+}
+
+.customButtonBlue .sapMBtnInner:hover {
+    background-color: blue !important; /* 버튼 호버 색상 */
+    color: white !important; /* 텍스트 색상 설정 */
+}
+
+.customButtonBlue .sapMBtnInner:active {
+    background-color: rgb(255, 255, 255) !important;
+    color: blue  !important; /* 텍스트 색상 설정 */
+    border-width: 2px !important; /* 두꺼운 테두리 두께 */
+    border-style: solid !important; /* 테두리 스타일 */
+    border-color: blue !important; /* 테두리 색상 */
+}
+
+.customButtonBlue .sapUiIcon {
+    color: blue !important; 
+}
+
+.customLabelColor {
+    color: rgb(9, 9, 143); /* Change 'red' to your desired color */
+}
+
+.customTitle {
+    font-weight: bold;
+    color: #000; /* Add your desired title color */
+}
+
+.customRatingIndicator .sapMRIT .sapMRITItem {
+    font-size: 2rem; /* 아이콘의 크기를 증가시킵니다. */
+    width: 2rem; /* 아이콘의 너비를 증가시킵니다. */
+    height: 2rem; /* 아이콘의 높이를 증가시킵니다. */
+}

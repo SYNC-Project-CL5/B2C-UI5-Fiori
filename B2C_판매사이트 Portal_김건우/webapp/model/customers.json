@@ -1,0 +1,31 @@
+{
+	"customers": [
+		{
+			"name": "Kinergy ST AS",
+			"productId": 38761,
+			"lastPurchase": "2024.05.20 ~ 2024.05.30",
+			"payment": "마감임박",
+			"state": "Error",
+			"amount": 160000,
+			"currencyCode": "KRW"
+		},
+		{
+			"name": "iON evo",
+			"productId": 88921,
+			"lastPurchase": "2024.05.27 ~ 2024.06.30",
+			"payment": "진행중",
+			"state": "Success",
+			"amount": 240000,
+			"currencyCode": "KRW"
+		},
+		{
+			"name": "Ventus S1 evo Z AS",
+			"productId": 38791,
+			"lastPurchase": "2024.06.01 ~ 2024.06.30",
+			"payment": "예정",
+			"state": "Warning",
+			"amount": 320000,
+			"currencyCode": "KRW"
+		}
+	]
+}

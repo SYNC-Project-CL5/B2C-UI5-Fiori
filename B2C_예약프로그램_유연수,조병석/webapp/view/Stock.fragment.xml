@@ -1,0 +1,91 @@
+<core:FragmentDefinition
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+>
+    <Dialog
+        id="idStockDialog"
+        contentWidth="450px"
+        contentHeight="400px"
+        class="customDialog"
+    >
+        <customHeader>
+            <Toolbar class="customHeader" width="100%">
+                <ToolbarSpacer />
+                <Title text="직영점 선택" class="customTitle" textAlign="Center"/>
+                <ToolbarSpacer />
+            </Toolbar>
+        </customHeader>
+        <content>
+            <Table
+                id="idTable"
+                items="{/StockSet}"
+                mode="SingleSelectMaster"
+                selectionChange="onSelectionChange"
+            >
+                <columns>
+                    <Column>
+                        <Label text="직영점" />
+                    </Column>
+
+                    <Column>
+                        <Label text="재고 유무" />
+                    </Column>
+
+                    <Column>
+                        <Label text="주문" />
+                    </Column>
+
+                    <!-- <Column >
+                        <Label text="단위" />
+                    </Column> -->
+                </columns>
+
+                <items>
+                    <ColumnListItem>
+                        <cells>
+                            <!-- 키필드를 표현하기 위한 ObjectIdentifier -->
+                            <ObjectIdentifier title="{Pname1}" />
+                            <ObjectStatus
+                                text="{path: 'Calqty', formatter: '.stockStatusText'}"
+                                icon="{path: 'Calqty', formatter: '.stockStatusIcon'}"
+                                state="{path: 'Calqty', formatter: '.stockStatusState'}"
+                            />
+                            <HBox>
+                                <Button
+                                    text="제품 예약"
+                                    press="onStockReservePress"
+                                    icon="sap-icon://shipping-status"
+                                    type="Emphasized"
+                                    visible="{= ${Calqty} === '0' }"
+                                    class="customButtonGreen"
+                                />
+                                <Button
+                                    text="제품 주문"
+                                    press="onStockOrderPress"
+                                    icon="sap-icon://shipping-status"
+                                    type="Emphasized"
+                                    visible="{= ${Calqty} > '0' }"
+                                    class="customButtonBlue"
+                                />
+                            </HBox>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+            <!-- <f:SimpleForm layout="ResponsiveGridLayout">
+                <Text text="항공사" />
+            </f:SimpleForm> -->
+        </content>
+
+        <beginButton>
+            <Button
+                text="닫기"
+                press="onClosePress"
+                type="Reject"
+            />
+        </beginButton>
+        <buttons />
+        <endButton />
+    </Dialog>
+</core:FragmentDefinition>

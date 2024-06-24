@@ -1,0 +1,121 @@
+<c:FragmentDefinition xmlns:layout="sap.ui.layout"
+    xmlns="sap.m"
+    xmlns:c="sap.ui.core"
+    xmlns:f="sap.ui.layout.form"    
+>
+
+    <Dialog id="idNewDialog" title="타이어 주문서 작성" class="customDialog">
+        <customHeader>
+            <Toolbar class="customHeader">
+                <ToolbarSpacer />
+                <Title text="타이어 주문란" class="customTitle"/>
+                <ToolbarSpacer />
+            </Toolbar>
+        </customHeader>
+        <content>
+            <f:SimpleForm layout="ColumnLayout"
+                columnsL="2"
+                columnsM="2"
+                columnsXL="2"
+                width="300px"
+                >
+                <!-- <Text text="hi"/> -->
+                <!-- <Label text="{i18n>labelBookid}"/>
+                <Input value="{new>/Bookid}" />
+
+                <Label text="{i18n>labelElcdt}"/>
+                <Input value="{new>/Elcdt}" /> -->
+                
+                <Label text="{i18n>labelPname1}" design="Bold" class="customLabelColor"/>
+                <Text text="{Pname1}" />
+
+                <Label text="{i18n>labelMaktx}" design="Bold" class="customLabelColor" />
+                <Text text="프로터보™" />
+
+                
+                
+
+                <Label text="{i18n>labelCustname}" design="Bold" class="customLabelColor" required="true"/>
+                <Input value="{new>/Custname}" width="4rem"/>
+
+                <Label text="{i18n>labelTelno}" design="Bold" class="customLabelColor" required="true"/>
+                <MaskInput value="{new>/Telno}" width="13rem" mask="99999999999" />
+
+                <Label text="{i18n>labelVisitdat}" design="Bold" class="customLabelColor" required="true"/>
+                <!-- <Input value="{new>/visitdat}" /> -->
+                <f:content>
+                    <DatePicker value="{
+                                    model: 'new',
+                                    path: '/Visitdat',
+                                    type: 'sap.ui.model.type.Date',
+                                    formatOptions: {
+                                        source: {pattern: 'yyyy-MM-dd'}
+                                    
+                                    }}"
+                                    width="15rem" />
+                </f:content>
+
+                <Label text="{i18n>labelAuqua}" design="Bold" class="customLabelColor" required="true"/>
+                <Input value="{new>/Auqua}" liveChange=".onAuquaChange" width="3rem"/>
+                <!-- <Text text='PKG' textAlign="Left"/> -->
+                
+                <Label text="{i18n>labelNetpr}" design="Bold" class="customLabelColor" />
+                <ObjectNumber number="{
+                    parts: [{path:'new>/Netpr'},{path:'new>/Waers'}],
+                    type:'sap.ui.model.type.Currency',
+                    formatOptions:{
+                        showMeasure: false
+                    }
+                }" 
+                unit="{new>/Waers}"
+                textAlign="Begin"
+                />
+
+                <Label text="{i18n>labelToamt}" design="Bold" class="customLabelColor"/>
+                <ObjectNumber number="{
+                    parts: [{path:'new>/Toamt'},{path:'new>/Waers'}],
+                    type:'sap.ui.model.type.Currency',
+                    formatOptions:{
+                        showMeasure: false
+                    }
+                }" 
+                unit="{new>/Waers}"
+                textAlign="Begin"
+                />
+                <!-- <Text text="{new>/Toamt} KRW" /> -->
+                
+                
+                <!-- <Label text="{i18n>labelCalqty}"/>
+                <Text text="{Calqty}"/> 
+                <Text text="{Meins}"/> -->
+                 
+                <!-- <Label text="{i18n>labelWerks}"/>
+                <Input value="{new>/Werks}" /> -->
+
+                  
+                    
+                <!-- <Label text="{i18n>labelMatnr}"/>
+                <Input value="{new>/Matnr}" /> -->
+
+<!-- 
+                <Label text="{i18n>labelWaers}"/>
+                <Input value="{new>/Waers}" />
+
+                <Label text="{i18n>labelMeins}"/>
+                <Input value="{new>/Meins}" /> -->
+                
+
+                <!-- <Label text="{i18n>labelStatus}"/>
+                <Input value="{new>/Status}" />
+
+                <Label text="{i18n>labelLoekz}"/>
+                <Input value="{new>/Loekz}" /> -->
+                
+        </f:SimpleForm>
+        </content>
+        <buttons>
+            <Button text="주문" press="onPayConfirm" type="Accept" />
+            <Button text="취소" press="onPayCancel" type="Reject"/>
+        </buttons>
+    </Dialog>
+</c:FragmentDefinition>

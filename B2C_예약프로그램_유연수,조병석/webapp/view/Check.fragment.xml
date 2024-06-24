@@ -1,0 +1,27 @@
+<c:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:c="sap.ui.core"
+    xmlns:f="sap.ui.layout.form"    
+>
+    <Dialog id="idCheckDialog" title="재고 이전 신청">
+        <content>
+            <f:SimpleForm layout="ColumnLayout"
+                columnsL="2"
+                columnsM="2"
+                columnsXL="2"
+                width="300px"
+                >
+
+                <Text text="재고가 부족합니다. 재고 이전 신청을 하시겠습니까?" />
+        
+        
+            </f:SimpleForm>
+        </content>
+
+        <buttons>
+            <Button text="확인" press="onCheckConfirm" type="Accept" />
+            <Button text="취소" press="onCheckCancel" type="Reject"/>
+        </buttons>
+
+    </Dialog>
+</c:FragmentDefinition>
